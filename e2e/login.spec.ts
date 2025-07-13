@@ -8,8 +8,14 @@ test("Login with success", async ({ page }) => {
     password: "pwd123",
   };
 
-  await page.locator("#username").fill(user.name);
-  await page.locator("#password").fill(user.password);
+  await page
+    .locator('input[placeholder="Seu @username incrível"]')
+    .fill(user.name);
+
+  await page
+    .locator('input[placeholder="Digite sua senha secreta"]')
+    .fill(user.password);
+
   await page.locator('button[type="submit"]').click();
 
   const welcomeMessage = await page.getByRole("heading", {
