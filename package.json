@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {},
-  "keywords": [],
+  "keywords": [
+    "Playwright",
+    "Test automation"
+  ],
   "author": "",
   "license": "ISC",
   "description": "",
